@@ -1,13 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdFingerprint } from "react-icons/md";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaWindows } from "react-icons/fa";
 import { GoThreeBars } from "react-icons/go";
+import { Button } from "../Button";
 
 function Navbar() {
   const [click, setClick] = useState(false);
 
+  const [button, setButton] = useState(true);
+
   const handleClick = () => setClick(!click);
+
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+      if(FaWindows.innerWidth <= 960) {
+          setButton(false)
+      } else {
+          setButton(true)
+      }
+  }
+
+  window.addEventListener('resize',showButton);
 
   return (
     <>
