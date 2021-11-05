@@ -4,6 +4,7 @@ import { MdFingerprint } from "react-icons/md";
 import { FaTimes, FaWindows } from "react-icons/fa";
 import { GoThreeBars } from "react-icons/go";
 import { Button } from "../Button";
+import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
