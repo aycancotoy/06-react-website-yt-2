@@ -5,7 +5,7 @@ const STYLES = ['btn--primary', 'btn--outlinee'];
 
 const SIZES = ['btn--medium', 'btn--large', 'btn--mobile', 'btn--wide'];
 
-const COLOR = ['primary', 'blue', 'red', 'green'];
+const COLOR = ['primary', 'blue', 'red', 'green','transparent'];
 
 export const Button = ({
   children,
@@ -22,7 +22,7 @@ export const Button = ({
     buttonSize : SIZES[0]
 
     const checkButtonColor = STYLES.includes(buttonColor) ? 
-    buttonColor : COLOR[0]
+    buttonColor : COLOR[4];
 
     return(
         <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`} onClick={onClick} type={type}>{children}</button>
