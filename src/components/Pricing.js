@@ -60,7 +60,7 @@ function Pricing() {
                     <GiCrystalize />
                   </div>
                   <h3>Diamond</h3>
-                  <h4>$99.99</h4>
+                  <h4>$89.99</h4>
                   <p>per month</p>
                   <ul className="pricing__container-features">
                     <li>Unlimited Transactions</li>
